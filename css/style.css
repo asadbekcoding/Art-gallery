@@ -28,8 +28,8 @@ button {
 
 .container {
   max-width: 1110px;
-  height: 100px;
   margin: 0 auto;
+  background-color: aqua;
 }
 
 header .header {
@@ -37,6 +37,7 @@ header .header {
   margin: 0 auto;
   margin-bottom: 180px;
   height: 799px;
+  background-color: tomato;
   background-image: url(../img/disktop-img-header-content-background-img.png);
   background-repeat: no-repeat;
 }
@@ -70,7 +71,7 @@ header .header .logo .logo-content p {
   font-weight: 400;
   font-size: 22px;
   line-height: 145%;
-  color: #444;
+  color: #444444;
 }
 header .header .logo .logo-content .btn a {
   display: flex;
@@ -93,4 +94,80 @@ header .header .logo .logo-content .btn a .strelka {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+main .wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 180px;
+}
+main .wrapper .wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .wrapper .wrapper-content .wrapper-content-text {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+main .wrapper .wrapper-content .wrapper-content-text h1 {
+  color: #151515;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+main .wrapper .wrapper-content .wrapper-content-text p {
+  color: #444444;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 145%;
+}
+main .wrapper .wrapper-content .wrapper-content-img {
+  width: 635px;
+}
+main .wrapper .wrapper-content .wrapper-content-img img {
+  width: 635px;
+  display: block;
+}
+main .wrapper .wrapper-content-images {
+  display: flex;
+  justify-content: space-between;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-1 img {
+  width: 635px;
+  display: block;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-2 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-2 img {
+  width: 445px;
+  display: block;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-2 .wrapper-about {
+  max-width: 445px;
+  padding: 65px 47px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+  background-color: #151515;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-2 .wrapper-about h1 {
+  color: #fff;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+main .wrapper .wrapper-content-images .wrapper-content-images-2 .wrapper-about p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 145%;
 }/*# sourceMappingURL=style.css.map */

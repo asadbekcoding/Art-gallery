@@ -10,6 +10,9 @@ body, button{
 p{
     font-family: 'Outfit';
 }
+$heading-color: #151515;
+$paragrph-color: #444444;
+
 a{
     text-decoration: none;
 }
@@ -22,9 +25,8 @@ button{
 }
 .container{
     max-width: 1110px;
-    height: 100px;
     margin: 0 auto;
-    // background-color: aqua; 
+    background-color: aqua; 
 }
 header{
     .header{
@@ -32,7 +34,7 @@ header{
         margin: 0 auto;
         margin-bottom: 180px;
         height: 799px;
-        // background-color: tomato;
+        background-color: tomato;
         background-image: url(../img/disktop-img-header-content-background-img.png);
         background-repeat: no-repeat;
         .logo{
@@ -65,7 +67,7 @@ header{
                     font-weight: 400;
                     font-size: 22px;
                     line-height: 145%;
-                    color: #444;
+                    color: $paragrph-color;
                 }
                 .btn{
                     a{
@@ -89,6 +91,85 @@ header{
                             align-items: center;
                             justify-content: center;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+main{
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 180px;
+        .wrapper-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .wrapper-content-text{
+                max-width: 350px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 32px;
+                h1{
+                    color: $heading-color;
+                    font-weight: 900;
+                    font-size: 60px;
+                    line-height: 100%;
+                    text-transform: uppercase;
+                }
+                p{  
+                    color: $paragrph-color;
+                    font-weight: 300;
+                    font-size: 22px;
+                    line-height: 145%;
+                }
+            }
+            .wrapper-content-img{
+                width: 635px;
+                img{
+                    width: 635px;
+                    display: block;
+                }
+            }
+        }
+        .wrapper-content-images{
+            display: flex;
+            justify-content: space-between;
+            .wrapper-content-images-1{
+                  img{
+                    width: 635px;
+                    display: block;
+                  }
+            }
+            .wrapper-content-images-2{
+                display: flex;
+                flex-direction: column;
+                row-gap: 30px;
+                img{
+                    width: 445px;
+                    display: block;
+                }
+                .wrapper-about{
+                    max-width: 445px;
+                    padding: 65px 47px;
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 32px;
+                    background-color: #151515;
+                    h1{ 
+                        color: #fff;
+                        font-weight: 900;
+                        font-size: 60px;
+                        line-height: 100%;
+                        text-transform: uppercase;
+                    }
+                    p{  
+                        color: #fff;
+                        font-weight: 300;
+                        font-size: 22px;
+                        line-height: 145%;
                     }
                 }
             }
