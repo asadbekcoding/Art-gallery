@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Outfit:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, button{
+    font-family: 'Big Shoulders Display';
+}
+p{
+    font-family: 'Outfit';
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+}
+.container{
+    max-width: 1110px;
+    height: 100px;
+    margin: 0 auto;
+    // background-color: aqua; 
+}
+header{
+    .header{
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-bottom: 180px;
+        height: 799px;
+        // background-color: tomato;
+        background-image: url(../img/disktop-img-header-content-background-img.png);
+        background-repeat: no-repeat;
+        .logo{
+            height: 799px;
+            padding-top: 190px;
+            background-image: url(../img/disktop-img-header-background-img.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: flex;
+            justify-content: space-between;
+            .logo-text{
+               h1{
+                width: 450px;
+                font-weight: 900;
+                font-size: 96px;
+                line-height: 92%;
+                text-transform: uppercase;
+                color: #fff;
+                span{
+                    color: #151515;
+                }
+               }
+            }
+            .logo-content{
+                max-width: 350px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 64px;
+                p{
+                    font-weight: 400;
+                    font-size: 22px;
+                    line-height: 145%;
+                    color: #444;
+                }
+                .btn{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        button{
+                            width: 204px;
+                            height: 72px;
+                            font-weight: 800;
+                            font-size: 20px;
+                            letter-spacing: 0.18em;
+                            color: #fff;
+                            background-color: #151515;
+                            cursor: pointer;
+                        }
+                        .strelka{
+                            width: 56px;
+                            height: 72px;
+                            background: rgb(213, 150, 108);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
