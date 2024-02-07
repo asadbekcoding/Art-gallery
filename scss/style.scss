@@ -26,7 +26,6 @@ button{
 .container{
     max-width: 1110px;
     margin: 0 auto;
-    background-color: aqua; 
 }
 header{
     .header{
@@ -34,7 +33,6 @@ header{
         margin: 0 auto;
         margin-bottom: 180px;
         height: 799px;
-        background-color: tomato;
         background-image: url(../img/disktop-img-header-content-background-img.png);
         background-repeat: no-repeat;
         .logo{
@@ -173,6 +171,26 @@ main{
                     }
                 }
             }
+        }
+    }
+}
+footer{
+    background-color: #151515;
+    .foter{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px 0px 80px 0px;
+        p{  
+            color: #fff;
+            max-width: 430px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 156%;
+        }
+        .icons-icon{
+            display: flex;
+            column-gap: 20px;
         }
     }
 }
