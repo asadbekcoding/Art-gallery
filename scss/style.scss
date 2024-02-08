@@ -396,10 +396,11 @@ footer{
      }
      main{
         .wrapper{
+            padding: 0px 16px 0px 16px;
             .wrapper-content{
                 flex-direction: column-reverse;
                 .wrapper-content-text{
-                     max-width: 343px;
+                     max-width: 100%;
                 }
                 .wrapper-content-img{
                     .tablet-img{
@@ -408,7 +409,7 @@ footer{
                     .mobile-img{
                         display: block;
                         img{
-                            width: 343px;
+                            width: 100%;
                         }
                     }
                 }
@@ -424,7 +425,7 @@ footer{
                       .mobile-img{
                         display: block;
                         img{
-                            width: 343px;
+                            width: 100%;
                         }
                       }
                 }
@@ -436,13 +437,23 @@ footer{
                       .mobile-img{
                         display: block;
                         img{
-                            width: 343px;
+                            width: 100%;
                         }
                       }
                       .wrapper-about{
-                        max-width: 343px;
+                        max-width: 100%;
                       }
                 }
+            }
+        }
+     }
+     footer{
+        .foter{
+            flex-direction: column;
+            row-gap: 38px;
+            padding: 48px 32px;
+            p{
+                margin: 0;
             }
         }
      }
