@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 2px solid blue;
 }
 body, button{
     font-family: 'Big Shoulders Display';
@@ -178,7 +179,7 @@ footer{
     background-color: #151515;
     .foter{
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         padding: 80px 0px 80px 0px;
         p{  
@@ -191,6 +192,24 @@ footer{
         .icons-icon{
             display: flex;
             column-gap: 20px;
+        }
+    }
+}
+@media(max-width:1080px){
+    header{
+        .header{
+            margin-bottom: 120px;
+            .logo{
+                background-position: left;
+                flex-direction: column;
+                align-items: flex-end;
+                .logo-text{
+                    h1{
+                        color: $heading-color;
+                    }
+                }
+                
+            }
         }
     }
 }
