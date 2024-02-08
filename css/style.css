@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline: 2px solid blue;
 }
 
 body, button {
@@ -74,6 +73,7 @@ header .header .logo .logo-content p {
 header .header .logo .logo-content .btn a {
   display: flex;
   align-items: center;
+  transition: 0, 4s;
 }
 header .header .logo .logo-content .btn a button {
   width: 204px;
@@ -84,6 +84,7 @@ header .header .logo .logo-content .btn a button {
   color: #fff;
   background-color: #151515;
   cursor: pointer;
+  transition: 0.4s;
 }
 header .header .logo .logo-content .btn a .strelka {
   width: 56px;
@@ -92,6 +93,13 @@ header .header .logo .logo-content .btn a .strelka {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.4s;
+}
+header .header .logo .logo-content .btn a .strelka:hover {
+  background: #151515;
+}
+header .header .logo .logo-content .btn a:hover button {
+  background: rgb(213, 150, 108);
 }
 header .mobile-container {
   display: none;
@@ -331,7 +339,7 @@ footer .foter .icons-icon {
   }
   header .mobile-container .logo-text h1 {
     font-weight: 900;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 92%;
     text-transform: uppercase;
   }
@@ -366,12 +374,21 @@ footer .foter .icons-icon {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
+  }
+  header .mobile-container .logo-content .btn a .strelka:hover {
+    background: #151515;
+  }
+  header .mobile-container .logo-content .btn a:hover button {
+    background: rgb(213, 150, 108);
   }
   main .wrapper {
     padding: 0px 16px 0px 16px;
+    row-gap: 32px;
   }
   main .wrapper .wrapper-content {
     flex-direction: column-reverse;
+    row-gap: 25px;
   }
   main .wrapper .wrapper-content .wrapper-content-text {
     max-width: 100%;

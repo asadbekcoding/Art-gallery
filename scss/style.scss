@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 2px solid blue;
+    // outline: 2px solid blue;
 }
 body, button{
     font-family: 'Big Shoulders Display';
@@ -71,6 +71,7 @@ header{
                     a{
                         display: flex;
                         align-items: center;
+                        transition: 0,4s;
                         button{
                             width: 204px;
                             height: 72px;
@@ -80,6 +81,7 @@ header{
                             color: #fff;
                             background-color: #151515;
                             cursor: pointer;
+                            transition: 0.4s;
                         }
                         .strelka{
                             width: 56px;
@@ -88,6 +90,13 @@ header{
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            transition: 0.4s;
+                            &:hover{
+                                background: #151515;
+                            }
+                        }
+                        &:hover button{
+                            background: rgb(213, 150, 108);
                         }
                     }
                 }
@@ -353,7 +362,7 @@ footer{
            .logo-text{
                h1{
                    font-weight: 900;
-                   font-size: 60px;
+                   font-size: 50px;
                    line-height: 92%;
                    text-transform: uppercase;
                }
@@ -380,6 +389,7 @@ footer{
                         color: #fff;
                         background-color: #151515;
                         cursor: pointer;
+                        // transition: 0.4s;
                     }
                     .strelka{
                         width: 56px;
@@ -388,6 +398,13 @@ footer{
                         display: flex;
                         align-items: center;
                         justify-content: center;
+                        transition: 0.4s;
+                        &:hover{
+                            background: #151515;
+                        }
+                    }
+                    &:hover button{
+                        background: rgb(213, 150, 108);
                     }
                 }
             }
@@ -397,8 +414,10 @@ footer{
      main{
         .wrapper{
             padding: 0px 16px 0px 16px;
+            row-gap: 32px;
             .wrapper-content{
                 flex-direction: column-reverse;
+                row-gap: 25px;
                 .wrapper-content-text{
                      max-width: 100%;
                 }
