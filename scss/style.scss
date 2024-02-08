@@ -32,13 +32,12 @@ header{
     .header{
         max-width: 1440px;
         margin: 0 auto;
-        margin-bottom: 180px;
-        height: 799px;
         background-image: url(../img/disktop-img-header-content-background-img.png);
         background-repeat: no-repeat;
         .logo{
             height: 799px;
             padding-top: 190px;
+            margin-bottom: 180px;
             background-image: url(../img/disktop-img-header-background-img.png);
             background-repeat: no-repeat;
             background-position: center center;
@@ -46,7 +45,7 @@ header{
             justify-content: space-between;
             .logo-text{
                h1{
-                width: 450px;
+                max-width: 450px;
                 font-weight: 900;
                 font-size: 96px;
                 line-height: 92%;
@@ -130,6 +129,9 @@ main{
                     width: 635px;
                     display: block;
                 }
+                .tablet-img{
+                    display: none;
+                }
             }
         }
         .wrapper-content-images{
@@ -139,6 +141,9 @@ main{
                   img{
                     width: 635px;
                     display: block;
+                  }
+                  .tablet-img{
+                    display: none;
                   }
             }
             .wrapper-content-images-2{
@@ -185,8 +190,8 @@ footer{
         justify-content: space-between;
         padding: 80px 0px 80px 0px;
         p{  
-            color: #fff;
             max-width: 430px;
+            color: #fff;
             font-weight: 400;
             font-size: 18px;
             line-height: 156%;
@@ -200,15 +205,29 @@ footer{
 @media(max-width:1080px){
     header{
         .header{
-            margin-bottom: 120px;
+            background-image: none;
             .logo{
                 background-position: left;
                 flex-direction: column;
                 align-items: flex-end;
+                justify-content: flex-start;
+                row-gap: 48px;
+                padding-right: 39px;
+                padding-top: 145px;
+                height: 700px;
+                margin-bottom: 120px;
                 .logo-text{
+                    max-width: 339px;
+                    row-gap: 48px;
                     h1{
                         color: $heading-color;
+                        font-size: 70px;
+                        max-width: 339px;
                     }
+                }
+                .logo-content{
+                    max-width: 339px;
+                    row-gap: 48px;
                 }
                 
             }
@@ -218,24 +237,42 @@ footer{
         .wrapper{
             padding: 0px 39px 0px 39px;
             margin-bottom: 120px;
+            row-gap: 11px;
             .wrapper-content{
                 .wrapper-content-text{
                   max-width: 223px;
+                  h1{
+                    font-size: 50px;
+                  }
+                  p{
+                    font-size: 18px;
+                  }
                 }
                 .wrapper-content-img{
+                    .disktop-img{
+                        display: none;
+                    }
+                   .tablet-img{
+                    display: block;
                     img{
                         width: 400px;
                         height: 400px;
                     }
+                   }
                 }
             }
             .wrapper-content-images{
                .wrapper-content-images-1{
-                img{
-                    width: 398px;
-                    height: 720px;
+                   .disktop-img{
+                       display: none;
+                   }
+                   .tablet-img{
                     display: block;
-                }
+                    img{
+                        width: 400px;
+                        height: 720px;
+                    }
+                   }
                }
                .wrapper-content-images-2{
                 row-gap: 11px;
@@ -259,6 +296,17 @@ footer{
                     }
                 }
                }
+            }
+        }
+    }
+    footer{
+        .foter{
+            padding: 56px 39px;
+            justify-content: flex-start;
+            p{  
+                font-size: 16px;
+                margin-left: 64px;
+                margin-right: 133px;
             }
         }
     }
