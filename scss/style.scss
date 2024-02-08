@@ -135,6 +135,9 @@ main{
                 .tablet-img{
                     display: none;
                 }
+                .mobile-img{
+                    display: none;
+                }
             }
         }
         .wrapper-content-images{
@@ -148,12 +151,18 @@ main{
                   .tablet-img{
                     display: none;
                   }
+                  .mobile-img{
+                    display: none;
+                  }
             }
             .wrapper-content-images-2{
                 display: flex;
                 flex-direction: column;
                 row-gap: 30px;
                 .tablet-img{
+                    display: none;
+                }
+                .mobile-img{
                     display: none;
                 }
                 img{
@@ -340,6 +349,7 @@ footer{
            flex-direction: column;
            row-gap: 32px;
            margin-bottom: 120px;
+           padding-left: 16px;
            .logo-text{
                h1{
                    font-weight: 900;
@@ -388,6 +398,51 @@ footer{
         .wrapper{
             .wrapper-content{
                 flex-direction: column-reverse;
+                .wrapper-content-text{
+                     max-width: 343px;
+                }
+                .wrapper-content-img{
+                    .tablet-img{
+                        display: none   ;
+                    }
+                    .mobile-img{
+                        display: block;
+                        img{
+                            width: 343px;
+                        }
+                    }
+                }
+            }
+            .wrapper-content-images{
+                flex-direction: column;
+                align-items: center;
+                row-gap: 16px;
+                .wrapper-content-images-1{
+                    .tablet-img{
+                        display: none;
+                    }
+                      .mobile-img{
+                        display: block;
+                        img{
+                            width: 343px;
+                        }
+                      }
+                }
+                .wrapper-content-images-2{
+                    row-gap: 16px;
+                    .tablet-img{
+                        display: none;
+                    }
+                      .mobile-img{
+                        display: block;
+                        img{
+                            width: 343px;
+                        }
+                      }
+                      .wrapper-about{
+                        max-width: 343px;
+                      }
+                }
             }
         }
      }
